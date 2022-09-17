@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+}
+
+main {
+    width: 90vw;
+    height: 92vh;
+    max-width: 345px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    height: 240px;
+    background-image: url('./images/image-product-mobile.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.description {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+
+h6 {
+
+    margin-bottom: 14px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2rem;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+
+p {
+    width: 96%;
+    margin-top: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.6;
+    color: hsl(228, 12%, 48%);
+}
+
+.contPrice {
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: hsl(158, 36%, 37%);
+}
+
+.oldPrice {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    text-decoration-line: line-through;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+
+}
+
+object {
+    padding-right: 10px;
+}
+
+@media (min-width: 600px) {
+    main {
+        max-width: 580px;
+        height: 440px;
+        display: flex;
+    }
+
+    .image {
+        width: 300px;
+        height: 100%;
+        background-image: url('./images/image-product-desktop.jpg');
+        background-size: cover;
+    }
+
+    .description {
+        width: 50%;
+        padding: 20px;
+    }
+
+    .oldPrice {
+        margin-left: 20px;
+    }
+}
